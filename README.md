@@ -29,7 +29,8 @@ Clone the repository and execute Gradle to build the application:
 ```
 ./gradlew build
 ```
-ez a 32es sor....
+ez itt most egy masik valtoztatas
+es igy ez nagyon jo nekem
 To compile and run tests also execute:
 
 ```
