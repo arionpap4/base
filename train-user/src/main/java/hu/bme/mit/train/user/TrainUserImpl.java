@@ -7,6 +7,7 @@ public class TrainUserImpl implements TrainUser {
 
 	private TrainController controller;
 	private int joystickPosition;
+	private long time;
 
 	public TrainUserImpl(TrainController controller) {
 		this.controller = controller;
@@ -26,6 +27,13 @@ public class TrainUserImpl implements TrainUser {
 	public void overrideJoystickPosition(int joystickPosition) {
 		this.joystickPosition = joystickPosition;
 		controller.setJoystickPosition(joystickPosition);
+		this.time = System.currentTimeMillis(); 
+	}
+
+	@Override
+	public void checkSleeping(int timeLimit){
+		if(System.currentTimeMillis()- this.time > timeLimit)   
+		overrideJoystickPosition(-1); 
 	}
 
 }
