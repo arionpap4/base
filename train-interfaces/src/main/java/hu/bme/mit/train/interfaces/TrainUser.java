@@ -8,5 +8,5 @@ public interface TrainUser {
 
 	void overrideJoystickPosition(int joystickPosition);
 
-	void checkSleeping(int timeLimit;)
+	void checkSleeping(int timeLimit); 
 }
