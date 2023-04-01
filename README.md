@@ -29,7 +29,7 @@ Clone the repository and execute Gradle to build the application:
 ```
 ./gradlew build
 ```
-
+ez a 32es sor....
 To compile and run tests also execute:
 
 ```
