@@ -1,7 +1,7 @@
 # Train Speed Controller
 
 This is a sample application for the verification laboratory.
-
+*ez jó kis dőlt betűs*, **ez meg félkövér...**
 ## Getting started
 
 * The application is implemented in Java.
@@ -20,7 +20,7 @@ To compile and run tests also execute:
 ```
 mvn test
 ```
-
+~~ez nem fontos~~
 (That will be enough to know for the current exercises. If you are more interested, see [this](https://github.com/ftsrg-edu/swsv-labs/wiki/0b-Build-tools) short guide about Maven.)
 
 ### Gradle
