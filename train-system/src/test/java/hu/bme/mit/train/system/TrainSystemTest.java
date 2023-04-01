@@ -9,6 +9,9 @@ import hu.bme.mit.train.interfaces.TrainSensor;
 import hu.bme.mit.train.interfaces.TrainUser;
 import hu.bme.mit.train.system.TrainSystem;
 
+import com.google.common.collect.Table;
+import com.google.common.collect.HashBasedTable;
+
 public class TrainSystemTest {
 
 	TrainController controller;
@@ -53,6 +56,16 @@ public class TrainSystemTest {
 	@Test
     public void testSpeedLimit() {
         Assert.assertTrue(sensor.getSpeedLimit()>0); 
+    }
+
+	@Test
+    public void testIfDataIsAdded() {
+		long time = System.currentTimeMillis();
+		int pos = 1;
+		int speed = 1;  
+        sensor.addToTable(time,pos,speed); 
+        boolean belekerulnek = sensor.getTable().contains(time, pos); 
+        Assert.assertTrue(belekerulnek); 
     }
 	
 }
